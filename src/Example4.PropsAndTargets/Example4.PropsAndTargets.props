@@ -1,0 +1,9 @@
+﻿<Project>
+  <PropertyGroup>
+    <MsBuildAllProjects>$(MsBuildAllProjects);$(MsBuildThisFileFullPath)</MsBuildAllProjects>
+    <SayHelloAssemblyFile Condition=" '$(SayHelloAssemblyFile)' == '' ">$(MSBuildThisFileDirectory)..\tools\Example4.PropsAndTargets.dll</SayHelloAssemblyFile >
+  </PropertyGroup>
+
+  <UsingTask TaskName="Example4.PropsAndTargets.SayHello" AssemblyFile="$(SayHelloAssemblyFile)" />
+
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <VersionSuffix>dev</VersionSuffix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Example4.PropsAndTargets" Version="1.0.0-dev-*" />
+  </ItemGroup>
+
+  <Target Name="Testing" BeforeTargets="CoreCompile">
+    <SayHello PersonName="Bob" />
+  </Target>
+  
+</Project>

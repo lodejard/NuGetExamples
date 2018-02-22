@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+
+    <VersionSuffix>dev-build$([System.DateTime]::UtcNow.ToString(yyyyMMddTHHmmssZ))</VersionSuffix>
+    <Company>NuGetExamples</Company>
+    <Authors>example@nugetexamples.com</Authors>
+    <Description>Example of a custom build task with props and targets</Description>
+
+    <IsTool>true</IsTool>
+    <ContentTargetFolders>build</ContentTargetFolders>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.5.180" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Example4.PropsAndTargets.props" />
+    <Content Include="Example4.PropsAndTargets.targets" />
+  </ItemGroup>
+
+</Project>

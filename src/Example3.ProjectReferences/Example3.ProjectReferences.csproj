@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Example1.ClassLibrary\Example1.ClassLibrary.csproj" />
+    <ProjectReference Include="..\Example2.CrossCompileClassLib\Example2.CrossCompileClassLib.csproj" />
+  </ItemGroup>
+
+</Project>
